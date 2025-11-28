@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush & Daksh Help Support</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand {
+            font-weight: 700;
+            color: white;
+        }
+        
+        .hero-header {
+            background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
+                        url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a77fb8d6-24d2-4d0e-ba70-1a03a03a3864.png') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+        }
+        
+        .course-card {
+            transition: transform 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .course-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .course-card-header {
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+        }
+        
+        .course-card-body {
+            padding: 20px;
+            background-color: white;
+        }
+        
+        .scope-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        .scope-list li:before {
+            content: "•";
+            color: var(--secondary-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        
+        .contact-box {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .about-section {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 4rem 0;
+        }
+        
+        .friend-img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 0;
+        }
+        
+        .syllabus-item {
+            margin-bottom: 10px;
+        }
+        
+        .syllabus-item h5 {
+            color: var(--secondary-color);
+        }
+        
+        .material-card {
+            border-left: 4px solid var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .hero-header {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ayush & Daksh Help Support</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#scope">Scope</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#syllabus">Syllabus</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#materials">Study Materials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Header -->
+    <header class="hero-header">
+        <div class="container">
+            <h1 class="display-3 fw-bold mb-4">Your Academic Journey Starts Here</h1>
+            <p class="lead mb-4">Comprehensive support for BCA and BBA students at every step</p>
+            <a href="#courses" class="btn btn-primary btn-lg px-4">Explore Courses</a>
+        </div>
+    </header>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Our Support For</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="course-card">
+                        <div class="course-card-header">
+                            <h3 class="mb-0">Bachelor of Computer Applications (BCA)</h3>
+                        </div>
+                        <div class="course-card-body">
+                            <p>A 3-year undergraduate program focusing on computer applications and software development.</p>
+                            <p>Covers programming, database management, networking, and web development.</p>
+                            <div class="text-center mt-3">
+                                <a href="#bca-scope" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="course-card">
+                        <div class="course-card-header">
+                            <h3 class="mb-0">Bachelor of Business Administration (BBA)</h3>
+                        </div>
+                        <div class="course-card-body">
+                            <p>A 3-year undergraduate program focusing on business management principles.</p>
+                            <p>Covers marketing, finance, human resources, and organizational behavior.</p>
+                            <div class="text-center mt-3">
+                                <a href="#bba-scope" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scope Section -->
+    <section id="scope" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Career Scope After Completion</h2>
+            
+            <!-- BCA Scope -->
+            <div id="bca-scope" class="mb-5">
+                <h3 class="mb-4 text-center">BCA Career Opportunities</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="scope-list">
+                            <li>Software Developer</li>
+                            <li>Web Developer</li>
+                            <li>Database Administrator</li>
+                            <li>System Analyst</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="scope-list">
+                            <li>Network Administrator</li>
+                            <li>Mobile App Developer</li>
+                            <li>IT Support Specialist</li>
+                            <li>UI/UX Designer</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="lead">Further studies: MCA (Master of Computer Applications), MBA, MSc in IT/Computer Science</p>
+                </div>
+            </div>
+            
+            <!-- BBA Scope -->
+            <div id="bba-scope">
+                <h3 class="mb-4 text-center">BBA Career Opportunities</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="scope-list">
+                            <li>Management Trainee</li>
+                            <li>Marketing Executive</li>
+                            <li>Human Resource Specialist</li>
+                            <li>Financial Analyst</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="scope-list">
+                            <li>Business Consultant</li>
+                            <li>Operations Manager</li>
+                            <li>Entrepreneur</li>
+                            <li>Sales Manager</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="mt-4 text-center">
+                    <p class="lead">Further studies: MBA (Master of Business Administration), PGDM, MSc in Management</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Semester-wise Syllabus</h2>
+            
+            <!-- BCA Syllabus -->
+            <div class="mb-5">
+                <h3 class="text-center mb-4">BCA Syllabus</h3>
+                <div class="row">
+                    <!-- Semester 1 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 1</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Programming in C</h5>
+                                    <p>Introduction to programming concepts, C language fundamentals</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Digital Electronics</h5>
+                                    <p>Logic Gates, Boolean Algebra, Combinational Circuits</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Mathematics I</h5>
+                                    <p>Algebra, Calculus, Probability</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Communication Skills</h5>
+                                    <p>Business communication, report writing, presentations</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 2 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 2</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Data Structures</h5>
+                                    <p>Arrays, Linked Lists, Stacks, Queues, Trees</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Object Oriented Programming with C++</h5>
+                                    <p>Classes, Objects, Inheritance, Polymorphism</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Mathematics II</h5>
+                                    <p>Discrete Mathematics, Graph Theory</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Financial Accounting</h5>
+                                    <p>Basic accounting principles, balance sheets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 3 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 3</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Database Management Systems</h5>
+                                    <p>SQL, Normalization, ER Diagrams</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Operating Systems</h5>
+                                    <p>Processes, Memory Management, File Systems</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Web Technologies</h5>
+                                    <p>HTML, CSS, JavaScript, Basics of PHP</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Computer Networks</h5>
+                                    <p>OSI Model, TCP/IP, Network Devices</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 4 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 4</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Software Engineering</h5>
+                                    <p>SDLC, Agile Methodology, Testing</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Java Programming</h5>
+                                    <p>Core Java, Swing, JDBC</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Microprocessor Architecture</h5>
+                                    <p>8085/8086 Architecture, Assembly Language</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>E-Commerce</h5>
+                                    <p>Business Models, Online Payment Systems</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 5 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 5</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Dot Net Technologies</h5>
+                                    <p>C#, ASP.NET, ADO.NET</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Data Mining</h5>
+                                    <p>Data Warehousing, Classification, Clustering</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Computer Graphics</h5>
+                                    <p>2D/3D Transformations, OpenGL Basics</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Project Work I</h5>
+                                    <p>Mini Project implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 6 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-primary text-white">Semester 6</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Cloud Computing</h5>
+                                    <p>Virtualization, Service Models, AWS Basics</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Artificial Intelligence</h5>
+                                    <p>Expert Systems, Machine Learning Basics</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Cyber Security</h5>
+                                    <p>Cryptography, Ethical Hacking</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Project Work II</h5>
+                                    <p>Major Project implementation</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- BBA Syllabus -->
+            <div>
+                <h3 class="text-center mb-4">BBA Syllabus</h3>
+                <div class="row">
+                    <!-- Semester 1 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 1</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Principles of Management</h5>
+                                    <p>Management theories, Planning, Organizing</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Economics I</h5>
+                                    <p>Microeconomic concepts for business</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Financial Accounting</h5>
+                                    <p>Accounting principles, Journal, Ledger</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Mathematics</h5>
+                                    <p>Commercial Arithmetic, Statistics Basics</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 2 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 2</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Organizational Behavior</h5>
+                                    <p>Individual and group behavior in organizations</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Economics II</h5>
+                                    <p>Macroeconomic concepts for business</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Law</h5>
+                                    <p>Contract Act, Sale of Goods Act</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Communication</h5>
+                                    <p>Report writing, presentations, email etiquette</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 3 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 3</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Marketing Management</h5>
+                                    <p>Marketing concepts, 4Ps, Consumer Behavior</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Human Resource Management</h5>
+                                    <p>Recruitment, Training, Performance Appraisal</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Research Methodology</h5>
+                                    <p>Research Design, Data Collection Methods</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Management Accounting</h5>
+                                    <p>Cost Concepts, Budgeting, Variance Analysis</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 4 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 4</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Financial Management</h5>
+                                    <p>Capital Budgeting, Cost of Capital, Working Capital</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Production & Operations Management</h5>
+                                    <p>Plant Layout, Quality Control, Inventory</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Business Statistics</h5>
+                                    <p>Descriptive Statistics, Probability Distributions</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Management Information Systems</h5>
+                                    <p>Role of IT in business, ERP, CRM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 5 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 5</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Entrepreneurship Development</h5>
+                                    <p>Business Plan, Startup Management</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>International Business</h5>
+                                    <p>Export-Import, Foreign Exchange</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Strategic Management</h5>
+                                    <p>SWOT Analysis, Corporate Strategy</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Specialization Elective I</h5>
+                                    <p>Finance/Marketing/HR elective</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semester 6 -->
+                    <div class="col-md-6">
+                        <div class="card mb-4">
+                            <div class="card-header bg-success text-white">Semester 6</div>
+                            <div class="card-body">
+                                <div class="syllabus-item">
+                                    <h5>Business Ethics & CSR</h5>
+                                    <p>Corporate Governance, Ethical Issues</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Services Marketing</h5>
+                                    <p>Service Characteristics, Service Quality</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Specialization Elective II</h5>
+                                    <p>Finance/Marketing/HR elective</p>
+                                </div>
+                                <div class="syllabus-item">
+                                    <h5>Project Work</h5>
+                                    <p>Business research project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Study Materials Section -->
+    <section id="materials" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Study Materials</h2>
+            
+            <div class="row">
+                <!-- BCA Materials -->
+                <div class="col-md-6">
+                    <div class="card material-card mb-4">
+                        <div class="card-body">
+                            <h3 class="mb-4">BCA Study Resources</h3>
+                            
+                            <div class="mb-4">
+                                <h4><i class="fas fa-book me-2"></i>Recommended Books</h4>
+                                <ul>
+                                    <li>Programming in C - E. Balagurusamy</li>
+                                    <li>Data Structures - Seymour Lipschutz</li>
+                                    <li>Database Systems - Korth</li>
+                                    <li>Operating Systems - Galvin</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4><i class="fas fa-laptop me-2"></i>Online Learning</h4>
+                                <ul>
+                                    <li>Coursera - Programming Fundamentals</li>
+                                    <li>Udemy - Web Development Bootcamp</li>
+                                    <li>edX - Introduction to Computer Science</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4><i class="fas fa-code me-2"></i>Practice Platforms</h4>
+                                <ul>
+                                    <li>LeetCode for programming practice</li>
+                                    <li>HackerRank for coding challenges</li>
+                                    <li>CodeChef for competitive programming</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- BBA Materials -->
+                <div class="col-md-6">
+                    <div class="card material-card mb-4">
+                        <div class="card-body">
+                            <h3 class="mb-4">BBA Study Resources</h3>
+                            
+                            <div class="mb-4">
+                                <h4><i class="fas fa-book me-2"></i>Recommended Books</h4>
+                                <ul>
+                                    <li>Principles of Management - P. Drucker</li>
+                                    <li>Marketing Management - P. Kotler</li>
+                                    <li>Financial Management - Prasanna Chandra</li>
+                                    <li>Organizational Behavior - Robbins</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4><i class="fas fa-laptop me-2"></i>Online Learning</h4>
+                                <ul>
+                                    <li>Coursera - Business Foundations</li>
+                                    <li>Udemy - Business Management</li>
+                                    <li>edX - MicroMasters in Business</li>
+                                </ul>
+                            </div>
+                            
+                            <div>
+                                <h4><i class="fas fa-chart-line me-2"></i>Case Study Resources</h4>
+                                <ul>
+                                    <li>Harvard Business Review Case Studies</li>
+                                    <li>Ivey Publishing Case Studies</li>
+                                    <li>The Case Centre</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="contact-box">
+                        <h3 class="text-center mb-4">Need Help? Contact Us!</h3>
+                        <div class="row">
+                            <div class="col-md-6 text-center mb-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-phone-alt fa-2x mb-3" style="color: var(--secondary-color);"></i>
+                                    <h4>Call Support</h4>
+                                    <p>Available Monday to Saturday, 10AM - 6PM</p>
+                                    <a href="tel:9155248848" class="btn btn-outline-primary">+91 9155248848</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center mb-4">
+                                <div class="mb-3">
+                                    <i class="fas fa-envelope fa-2x mb-3" style="color: var(--secondary-color);"></i>
+                                    <h4>Email Support</h4>
+                                    <p>Response within 24 hours</p>
+                                    <a href="mailto:ayushprashar205@gmail.com" class="btn btn-outline-primary">ayushprashar205@gmail.com</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p>Follow us on social media for updates and study tips!</p>
+                            <div class="social-icons">
+                                <a href="#" class="mx-2 text-primary"><i class="fab fa-facebook-f fa-2x"></i></a>
+                                <a href="#" class="mx-2 text-info"><i class="fab fa-twitter fa-2x"></i></a>
+                                <a href="#" class="mx-2 text-danger"><i class="fab fa-instagram fa-2x"></i></a>
+                                <a href="#" class="mx-2 text-success"><i class="fab fa-whatsapp fa-2x"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 text-white">About Ayush & Daksh</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3fc67115-22a0-452d-9f7a-d6ed0667dc7d.png" alt="Ayush Prashar and Daksh Zala smiling together on Marwadi University campus" class="img-fluid rounded friend-img">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="mb-4 text-white">Our Story</h3>
+                    <p class="text-white">Ayush Prashar and Daksh Zala are best friends and students at Marwadi University, Rajkot. As they navigated their academic journey, they realized how many students felt lost about what to do after completing their courses. This inspired them to create Ayush & Daksh Help Support - a platform to guide BCA and BBA students through their academic journey and beyond.</p>
+                    
+                    <h4 class="mt-4 text-white">True Friendship Goals</h4>
+                    <p class="text-white">Their friendship is built on trust, mutual respect, and a shared passion for helping others. They complement each other perfectly - Ayush's technical skills in BCA perfectly balance Daksh's business acumen from BBA.</p>
+                    
+                    <div class="mt-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-quote-left me-3 text-white"></i>
+                            <p class="text-white mb-0">"Friendship isn't about who you've known the longest. It's about who walked into your life and said 'I'm here for you' and proved it." - Ayush & Daksh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-white"><strong>Ayush Prashar</strong> - The tech whiz who believes coding can solve many of life's problems.</p>
+                        <p class="text-white"><strong>Daksh Zala</strong> - The business strategist who sees opportunities everywhere.</p>
+                    </div>
+                    
+                    <div class="mt-4">
+                        <p class="text-white">Together, they make an unstoppable team, combining their skills to help students navigate academic challenges and career decisions.</p>
+                        <p class="text-white">Their mission: To ensure no student feels lost or unsupported in their academic journey.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p class="mb-3">© 2023 Ayush & Daksh Help Support. All rights reserved.</p>
+            <p class="mb-0">Made with ❤️ by Ayush & Daksh</p>
+            <p class="mt-2">Marwadi University, Rajkot</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Initialize tooltips
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl);
+        });
+    </script>
+</body>
+</html>
+
